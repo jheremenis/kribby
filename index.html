@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>We use cookies to store our jar of delicious data</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/overview.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="gameArea">
+            <canvas id="world"></canvas>
+            <div id="instructions">
+                <b>A/D</b> to move, <b>W</b> to jump, collect treasure.<br/>
+                <b>Wall jump</b>, by coming close to a cornerstone and walking against it and jump<br/>
+                <b>Death</b> your deaths are stored inside cookies, don't die much or you don't get a reward (10times the limit)
+		<br/><br/>
+		To add your score to the board email "jheremenis@gmail.com" with your score, desired name and a printscreen image of your victory sign
+            </div>
+	    <div id="instructions">
+		<h2>ScoreBoard</h2>
+		<b>#1</b>Jeffrey Duivenvoorden: 31 deaths total<br/>
+		<b>#2</b>Jimmy Konijnenburg: 48 deaths total<br/>
+		<b>#3</b>Figo Hulsebosch: 182 deaths total<br/>
+	    </div>
+        </div>
+
+
+        <!-- dependencies -->
+        <script src="javascript/johanQuery.js"></script>
+        <script src="javascript/console.doge.js"></script>
+        <!-- GUI -->
+        <script src="javascript/gui.js"></script>
+        <!-- game -->
+        <script src="javascript/game.js"></script>
+        <!--
+            in the future the game should render the tiles only once
+        -->
+
+        <script>
+                    (function (i, s, o, g, r, a, m) {
+                        i['GoogleAnalyticsObject'] = r;
+                        i[r] = i[r] || function () {
+                            (i[r].q = i[r].q || []).push(arguments)
+                        }, i[r].l = 1 * new Date();
+                        a = s.createElement(o),
+                                m = s.getElementsByTagName(o)[0];
+                        a.async = 1;
+                        a.src = g;
+                        m.parentNode.insertBefore(a, m)
+                    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                    ga('create', 'UA-63968209-1', 'auto');
+                    ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
